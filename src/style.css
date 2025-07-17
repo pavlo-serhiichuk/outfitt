@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'MyFontBold';
+    src: url('./Inter-Bold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFontLight';
+    src: url('./Inter-Light.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.hello {
+    color: red;
+    font-family: 'MyFontBold', sans-serif;
+    font-weight: 600;
+    background: url('./image.png');
+    background-size: 300px;
+}
