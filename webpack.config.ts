@@ -10,7 +10,7 @@ module.exports = (env: EnvConfiguration) => {
 
   const paths: WebpackPaths = {
     htmlPath: path.resolve(__dirname, 'public', 'index.html'),
-    entryPath: path.resolve(__dirname, 'src', 'index.ts'),
+    entryPath: path.resolve(__dirname, 'src', 'index.tsx'),
     outputPath: path.resolve(__dirname, 'build'),
     srcPath: path.resolve(__dirname, 'src')
   }

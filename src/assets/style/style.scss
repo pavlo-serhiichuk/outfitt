@@ -1,27 +1,14 @@
-$body-color: blue;
+@use 'themes/light.scss';
+@use 'themes/dark.scss';
+@use 'fonts/fonts.scss';
+@use 'reset.scss';
 
-body {
-    background-color: green;
+.light, .dark {
+    background-color: var(--app-bg-color);
+    color: var(--app-text-color);
 }
 
-@font-face {
-    font-family: 'MyFontBold';
-    src: url('fonts/Inter-Bold.ttf') format('ttf');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MyFontLight';
-    src: url('fonts/Inter-Light.ttf') format('ttf');
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-.hello {
-    color: red;
-    font-family: 'MyFontBold', sans-serif;
-    font-weight: 600;
-    background-color: blue;
+.app {
+    width: 100vw;
+    height: 100vh;
 }
