@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --env PORT=3010",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
