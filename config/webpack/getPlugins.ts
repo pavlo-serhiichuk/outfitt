@@ -10,7 +10,7 @@ export const getPlugins = (options: WebpackOptions) => {
       template: paths.htmlPath,
     }),
     new MiniCssExtractPlugin({
-      filename: 'main.[contenthash:10].css', // Output filename for the extracted CSS
+      filename: 'css/main.[contenthash:10].css', // Output filename for the extracted CSS
     }),
   ]
 }

@@ -6,14 +6,14 @@ body {
 
 @font-face {
     font-family: 'MyFontBold';
-    src: url('./Inter-Bold.ttf') format('ttf');
+    src: url('fonts/Inter-Bold.ttf') format('ttf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyFontLight';
-    src: url('./Inter-Light.ttf') format('ttf');
+    src: url('fonts/Inter-Light.ttf') format('ttf');
     font-style: normal;
     font-weight: 400;
 }
