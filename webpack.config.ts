@@ -1,13 +1,19 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+import path  from 'path'
+import HtmlWebpackPlugin  from 'html-webpack-plugin'
+import MiniCssExtractPlugin  from 'mini-css-extract-plugin'
 
-module.exports = (env) => {
-  // console.log('mode: ', env.mode)
+type BuildMode = 'production' | 'development'
+
+interface EnvConfiguration {
+  mode: BuildMode,
+  port: number
+}
+
+module.exports = (env: EnvConfiguration) => {
   return {
     mode: 'development',
     entry: {
-      index: './src/index.js',
+      index: './src/index.ts',
     },
     output: {
       filename: 'main.[contenthash:10].js',
@@ -29,15 +35,20 @@ module.exports = (env) => {
       open: true,
       historyApiFallback: true,
     },
+    resolve: {
+      extensions: ['.tsx', '.ts', '.js'],
+    },
     module: {
       rules: [
         {
           test: /\.s[ac]ss$/i,
           use: [env.mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+          include: path.resolve(__dirname, 'src'),
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
+          include: path.resolve(__dirname, 'src'),
         },
         {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -45,6 +56,12 @@ module.exports = (env) => {
           generator: {
             filename: 'fonts/[name][ext]', // <-- this moves them to "dist/fonts/"
           },
+          include: path.resolve(__dirname, 'src'),
+        },
+        {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: /node_modules/,
         },
       ],
     },
