@@ -1,3 +1,9 @@
+$body-color: blue;
+
+body {
+    background-color: green;
+}
+
 @font-face {
     font-family: 'MyFontBold';
     src: url('./Inter-Bold.ttf') format('ttf');
@@ -17,4 +23,5 @@
     color: red;
     font-family: 'MyFontBold', sans-serif;
     font-weight: 600;
+    background-color: blue;
 }

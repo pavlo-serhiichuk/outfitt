@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import './style.css';
+import './style.scss';
 
 function component() {
   const element = document.createElement('div');
@@ -8,8 +8,8 @@ function component() {
   // Lodash, currently included via a script, is required for this line to work
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello')
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
+  btn.innerHTML = 'Click me and check the console! ~!!!!!!~~!';
+  btn.onclick = () => console.log('printed');
 
   element.appendChild(btn);
   return element;
