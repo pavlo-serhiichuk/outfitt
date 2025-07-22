@@ -1,7 +1,7 @@
-@use 'themes/light.scss';
-@use 'themes/dark.scss';
-@use 'fonts/fonts.scss';
-@use 'reset.scss';
+@use 'themes/light';
+@use 'themes/dark';
+@use 'fonts/fonts';
+@use 'reset';
 
 .light, .dark {
     background-color: var(--app-bg-color);

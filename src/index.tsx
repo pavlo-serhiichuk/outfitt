@@ -1,6 +1,6 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
-import './assets/style/style.scss'
+import '@/app/style/style.scss'
 import {App} from "./app/App";
 import {BrowserRouter} from "react-router";
 
