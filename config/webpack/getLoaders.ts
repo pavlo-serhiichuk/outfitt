@@ -4,11 +4,23 @@ import path from "path";
 import {WebpackOptions} from "./types/webpackTypes";
 
 export const getLoaders = (options: WebpackOptions) => {
-  const {mode, paths: {srcPath: include}, isDevMode} = options
+  const { paths: {srcPath: include}, isDevMode} = options
 
   const scssLoader = {
     test: /\.s[ac]ss$/i,
-    use: [isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+    use: [
+      isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+      {
+        loader: 'css-loader',
+        options: {
+          esModule: false,
+          modules: {
+            exportLocalsConvention: 'camelCase', // optional
+          }
+        }
+      },
+      'sass-loader'
+    ],
     include,
   }
   const imageLoader = {
