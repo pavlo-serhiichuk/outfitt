@@ -30,6 +30,9 @@ export function getWebpackConfig(options: WebpackOptions) {
     },
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
+      alias: {
+        '@': path.resolve(__dirname, '..', '..', 'src')
+      },
     },
   }
 }
