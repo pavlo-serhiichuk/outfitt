@@ -2,10 +2,13 @@ import React from "react";
 import {Route, Routes} from "react-router";
 import {MainPage} from "@/pages/MainPage";
 import {OutfitDetailsPage} from "@/pages/OutfitDetailsPage";
+import Header from "@/widgets/Header/ui/Header";
+import './style/style.scss'
+
 
 export function App() {
   return <div className={'app light'}>
-    Header
+    <Header />
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/details" element={<OutfitDetailsPage />} />

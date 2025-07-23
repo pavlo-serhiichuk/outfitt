@@ -4,7 +4,7 @@ import path from "path";
 import {WebpackOptions} from "./types/webpackTypes";
 
 export const getLoaders = (options: WebpackOptions) => {
-  const { paths: {srcPath: include}, isDevMode} = options
+  const {paths: {srcPath: include}, isDevMode} = options
 
   const scssLoader = {
     test: /\.s[ac]ss$/i,
@@ -15,6 +15,8 @@ export const getLoaders = (options: WebpackOptions) => {
         options: {
           esModule: false,
           modules: {
+            auto: (resPath: string) => resPath.includes('.module.'),
+            localIdentName: isDevMode ? '[local]_[hash:base64:4]' : '[hash:base64:8]',
             exportLocalsConvention: 'camelCase', // optional
           }
         }
