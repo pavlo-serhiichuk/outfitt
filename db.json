@@ -1,0 +1,340 @@
+{
+  "clothes": [
+    {
+      "id": 1,
+      "name": "Basic White T-Shirt",
+      "type": "top",
+      "category": "t-shirt",
+      "brand": "Uniqlo",
+      "size": "M",
+      "color": "white",
+      "gender": "unisex",
+      "price": 19.99,
+      "inStock": true,
+      "material": "100% cotton",
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "style": [
+        "casual",
+        "minimal"
+      ],
+      "rating": 4.3,
+      "images": [
+        "https://jayblancofficial.com/wp-content/uploads/2021/09/T-Shirt-Flat-White-Basic.jpg",
+        "https://jayblancofficial.com/wp-content/uploads/2021/09/T-Shirt-Flat-White-Quote-Back-uai-1032x1032.jpg"
+      ],
+      "description": "A classic white t-shirt made of soft cotton. Comfortable and breathable.",
+      "createdAt": "2025-07-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Denim Jacket",
+      "type": "outerwear",
+      "category": "jacket",
+      "brand": "Levi's",
+      "size": "L",
+      "color": "blue",
+      "gender": "unisex",
+      "price": 59.99,
+      "inStock": true,
+      "material": "100% denim",
+      "season": [
+        "spring",
+        "fall"
+      ],
+      "style": [
+        "casual",
+        "urban"
+      ],
+      "rating": 4.7,
+      "images": [
+        "https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87080596_TM.jpg?imwidth=640&imdensity=1&ts=1731600273475",
+        "https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87080596_TM_R.jpg?imwidth=640&imdensity=1&ts=1731600273475"
+      ],
+      "description": "Durable denim jacket for layering in cooler weather.",
+      "createdAt": "2025-07-02T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Black Slim Fit Jeans",
+      "type": "bottom",
+      "category": "jeans",
+      "brand": "Zara",
+      "size": "32",
+      "color": "black",
+      "gender": "male",
+      "price": 39.99,
+      "inStock": false,
+      "material": "98% cotton, 2% elastane",
+      "season": [
+        "fall",
+        "winter"
+      ],
+      "style": [
+        "casual",
+        "minimal"
+      ],
+      "rating": 4.0,
+      "images": [
+        "https://religionclothing.com/cdn/shop/files/MCEVCP99_VICIOUS_JEANS_RIPPER_BLACK_1.jpg?v=1731424758&width=700",
+        "https://religionclothing.com/cdn/shop/files/MCEVCP99_VICIOUS_JEANS_RIPPER_BLACK_2.jpg?v=1731424758&width=700",
+        "https://religionclothing.com/cdn/shop/files/MCEVCP99_VICIOUS_JEANS_RIPPER_BLACK_3.jpg?v=1731424758&width=700"
+      ],
+      "description": "Slim fit black jeans with stretch fabric for comfort.",
+      "createdAt": "2025-07-03T08:30:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Floral Summer Dress",
+      "type": "top",
+      "category": "dress",
+      "brand": "H&M",
+      "size": "S",
+      "color": "floral",
+      "gender": "female",
+      "price": 29.99,
+      "inStock": true,
+      "material": "Viscose",
+      "season": [
+        "summer"
+      ],
+      "style": [
+        "feminine",
+        "casual"
+      ],
+      "rating": 4.5,
+      "images": [
+        "https://balticborn.com/cdn/shop/products/marta-smocked-midi-dress-summer-floral-483959.jpg?v=1653335123&width=600",
+        "https://balticborn.com/cdn/shop/products/marta-smocked-midi-dress-summer-floral-526139.jpg?v=1653335123&width=600",
+        "https://balticborn.com/cdn/shop/products/marta-smocked-midi-dress-summer-floral-651890.jpg?v=1652900144&width=600"
+      ],
+      "description": "Lightweight floral dress perfect for hot weather.",
+      "createdAt": "2025-07-04T14:15:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Grey Wool Coat",
+      "type": "outerwear",
+      "category": "coat",
+      "brand": "COS",
+      "size": "M",
+      "color": "grey",
+      "gender": "female",
+      "price": 129.99,
+      "inStock": true,
+      "material": "80% wool, 20% polyester",
+      "season": [
+        "fall",
+        "winter"
+      ],
+      "style": [
+        "formal",
+        "minimal"
+      ],
+      "rating": 4.8,
+      "images": [
+        "https://www.nobodyschild.com/cdn/shop/files/NC_WEB_O242287GRYSD.jpg?v=1727886551",
+        "https://www.nobodyschild.com/cdn/shop/files/NC_WEB_O242287GRYDT.jpg?v=1739811849"
+      ],
+      "description": "Structured wool coat with a modern silhouette.",
+      "createdAt": "2025-07-05T09:45:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Running Shorts",
+      "type": "bottom",
+      "category": "shorts",
+      "brand": "Nike",
+      "size": "L",
+      "color": "black",
+      "gender": "male",
+      "price": 24.99,
+      "inStock": true,
+      "material": "Polyester",
+      "season": [
+        "summer"
+      ],
+      "style": [
+        "sport",
+        "active"
+      ],
+      "rating": 4.2,
+      "images": [
+        "https://reebok.ph/cdn/shop/files/100206010_B_Model_eCom.jpg?v=1732702646",
+        "https://reebok.ph/cdn/shop/files/100206010_Sid_Model_eCom.jpg?v=1732702646"
+      ],
+      "description": "Breathable athletic shorts designed for performance.",
+      "createdAt": "2025-07-06T11:20:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Basic White T-Shirt",
+      "type": "top",
+      "category": "t-shirt",
+      "brand": "Uniqlo",
+      "size": "M",
+      "color": "white",
+      "gender": "unisex",
+      "price": 19.99,
+      "inStock": true,
+      "material": "100% cotton",
+      "season": [
+        "spring",
+        "summer"
+      ],
+      "style": [
+        "casual",
+        "minimal"
+      ],
+      "rating": 4.3,
+      "images": [
+        "https://jayblancofficial.com/wp-content/uploads/2021/09/T-Shirt-Flat-White-Basic.jpg",
+        "https://jayblancofficial.com/wp-content/uploads/2021/09/T-Shirt-Flat-White-Quote-Back-uai-1032x1032.jpg"
+      ],
+      "description": "A classic white t-shirt made of soft cotton. Comfortable and breathable.",
+      "createdAt": "2025-07-01T10:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Denim Jacket",
+      "type": "outerwear",
+      "category": "jacket",
+      "brand": "Levi's",
+      "size": "L",
+      "color": "blue",
+      "gender": "unisex",
+      "price": 59.99,
+      "inStock": true,
+      "material": "100% denim",
+      "season": [
+        "spring",
+        "fall"
+      ],
+      "style": [
+        "casual",
+        "urban"
+      ],
+      "rating": 4.7,
+      "images": [
+        "https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87080596_TM.jpg?imwidth=640&imdensity=1&ts=1731600273475",
+        "https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87080596_TM_R.jpg?imwidth=640&imdensity=1&ts=1731600273475"
+      ],
+      "description": "Durable denim jacket for layering in cooler weather.",
+      "createdAt": "2025-07-02T12:00:00Z"
+    },
+    {
+      "id": 13,
+      "name": "Black Slim Fit Jeans",
+      "type": "bottom",
+      "category": "jeans",
+      "brand": "Zara",
+      "size": "32",
+      "color": "black",
+      "gender": "male",
+      "price": 39.99,
+      "inStock": false,
+      "material": "98% cotton, 2% elastane",
+      "season": [
+        "fall",
+        "winter"
+      ],
+      "style": [
+        "casual",
+        "minimal"
+      ],
+      "rating": 4.0,
+      "images": [
+        "https://religionclothing.com/cdn/shop/files/MCEVCP99_VICIOUS_JEANS_RIPPER_BLACK_1.jpg?v=1731424758&width=700",
+        "https://religionclothing.com/cdn/shop/files/MCEVCP99_VICIOUS_JEANS_RIPPER_BLACK_2.jpg?v=1731424758&width=700",
+        "https://religionclothing.com/cdn/shop/files/MCEVCP99_VICIOUS_JEANS_RIPPER_BLACK_3.jpg?v=1731424758&width=700"
+      ],
+      "description": "Slim fit black jeans with stretch fabric for comfort.",
+      "createdAt": "2025-07-03T08:30:00Z"
+    },
+    {
+      "id": 14,
+      "name": "Floral Summer Dress",
+      "type": "top",
+      "category": "dress",
+      "brand": "H&M",
+      "size": "S",
+      "color": "floral",
+      "gender": "female",
+      "price": 29.99,
+      "inStock": true,
+      "material": "Viscose",
+      "season": [
+        "summer"
+      ],
+      "style": [
+        "feminine",
+        "casual"
+      ],
+      "rating": 4.5,
+      "images": [
+        "https://balticborn.com/cdn/shop/products/marta-smocked-midi-dress-summer-floral-483959.jpg?v=1653335123&width=600",
+        "https://balticborn.com/cdn/shop/products/marta-smocked-midi-dress-summer-floral-526139.jpg?v=1653335123&width=600",
+        "https://balticborn.com/cdn/shop/products/marta-smocked-midi-dress-summer-floral-651890.jpg?v=1652900144&width=600"
+      ],
+      "description": "Lightweight floral dress perfect for hot weather.",
+      "createdAt": "2025-07-04T14:15:00Z"
+    },
+    {
+      "id": 15,
+      "name": "Grey Wool Coat",
+      "type": "outerwear",
+      "category": "coat",
+      "brand": "COS",
+      "size": "M",
+      "color": "grey",
+      "gender": "female",
+      "price": 129.99,
+      "inStock": true,
+      "material": "80% wool, 20% polyester",
+      "season": [
+        "fall",
+        "winter"
+      ],
+      "style": [
+        "formal",
+        "minimal"
+      ],
+      "rating": 4.8,
+      "images": [
+        "https://www.nobodyschild.com/cdn/shop/files/NC_WEB_O242287GRYSD.jpg?v=1727886551",
+        "https://www.nobodyschild.com/cdn/shop/files/NC_WEB_O242287GRYDT.jpg?v=1739811849"
+      ],
+      "description": "Structured wool coat with a modern silhouette.",
+      "createdAt": "2025-07-05T09:45:00Z"
+    },
+    {
+      "id": 16,
+      "name": "Running Shorts",
+      "type": "bottom",
+      "category": "shorts",
+      "brand": "Nike",
+      "size": "L",
+      "color": "black",
+      "gender": "male",
+      "price": 24.99,
+      "inStock": true,
+      "material": "Polyester",
+      "season": [
+        "summer"
+      ],
+      "style": [
+        "sport",
+        "active"
+      ],
+      "rating": 4.2,
+      "images": [
+        "https://reebok.ph/cdn/shop/files/100206010_B_Model_eCom.jpg?v=1732702646",
+        "https://reebok.ph/cdn/shop/files/100206010_Sid_Model_eCom.jpg?v=1732702646"
+      ],
+      "description": "Breathable athletic shorts designed for performance.",
+      "createdAt": "2025-07-06T11:20:00Z"
+    }
+  ]
+}

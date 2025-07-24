@@ -7,6 +7,7 @@ module.exports = (env: EnvConfiguration) => {
   const mode = env.mode || 'development'
   const port = env.PORT || 3010
   const isDevMode = mode === 'development'
+  const apiUrl = env.apiUrl || 'http://localhost:3010'
 
   const paths: WebpackPaths = {
     htmlPath: path.resolve(__dirname, 'public', 'index.html'),
@@ -19,6 +20,7 @@ module.exports = (env: EnvConfiguration) => {
     mode,
     port,
     paths,
+    apiUrl,
     isDevMode
   }
 

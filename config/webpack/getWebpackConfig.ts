@@ -1,6 +1,4 @@
 import path from "path";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {getPlugins} from "./getPlugins";
 import {getLoaders} from "./getLoaders";
 import {WebpackOptions} from "./types/webpackTypes";
@@ -25,8 +23,17 @@ export function getWebpackConfig(options: WebpackOptions) {
     devServer: {
       port,
       hot: true,
-      open: true,
+      open: false,
       historyApiFallback: true,
+      proxy: [
+        {
+          context: ['/api'],
+          target: 'http://localhost:8080',
+          pathRewrite: { '^/api': '' },
+          changeOrigin: true,
+          secure: false,
+        },
+      ]
     },
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],

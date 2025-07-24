@@ -2,7 +2,8 @@ export type BuildMode = 'production' | 'development'
 
 export interface EnvConfiguration {
   mode: BuildMode,
-  PORT: number
+  PORT: number,
+  apiUrl: string,
 }
 
 export interface WebpackPaths {
@@ -16,5 +17,6 @@ export interface WebpackOptions {
   mode: BuildMode
   port: number
   paths: WebpackPaths
+  apiUrl: string
   isDevMode: boolean
 }
