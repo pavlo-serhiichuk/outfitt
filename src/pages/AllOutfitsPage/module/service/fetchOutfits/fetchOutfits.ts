@@ -2,7 +2,7 @@ import {createAsyncThunk} from "@reduxjs/toolkit";
 import {$api} from "@/shared/api";
 
 export const fetchOutfits = createAsyncThunk(
-  'outfits/fetchOutfits',
+  'outfits/fetchOutfitById',
   // if you type your function argument here
   async (_, {rejectWithValue}) => {
     try {

@@ -31,6 +31,11 @@
 .outfitName {
   top: 300px;
   font-size: 24px;
+  &:hover {
+    transform: scale(1.1);
+    left: 10px;
+    transition: 0.2s ease-in-out all;
+  }
 }
 .outfitDescription {
   top: 360px;

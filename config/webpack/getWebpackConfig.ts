@@ -14,6 +14,7 @@ export function getWebpackConfig(options: WebpackOptions) {
       filename: 'main.[contenthash:10].js',
       path: paths.outputPath,
       clean: true,
+      publicPath: '/'
     },
     plugins: getPlugins(options),
     module: {

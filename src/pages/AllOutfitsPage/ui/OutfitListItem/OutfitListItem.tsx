@@ -1,6 +1,7 @@
 import React from 'react';
 import {Outfit} from "@/entities/Outfit";
 import s from './OutfitListItem.module.scss';
+import {NavLink} from "react-router";
 
 interface OutfitListItemProps {
   outfitItem: Outfit
@@ -20,7 +21,7 @@ export const OutfitListItem = ({outfitItem}: OutfitListItemProps) => {
   return (
     <div className={s.OutfitListItem}>
       <div className={s.outfitNameContainer}>
-        <div className={s.outfitName}>{outfitItem?.name}</div>
+        <NavLink to={`/details/${outfitItem.id}`} className={s.outfitName}>{outfitItem?.name}</NavLink>
         <div className={s.outfitDescription}>{outfitItem.description}</div>
       </div>
       <img src={outfitItem.images[imageIndex]} className={s.image} onClick={onChangeImageIndex}/>

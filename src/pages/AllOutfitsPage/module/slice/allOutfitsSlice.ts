@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {AllOutfitsSchema} from "@/entities/Outfit/module/types/AllOutfitsSchema";
-import {Outfit} from "@/entities/Outfit/module/types/outfit";
-import {fetchOutfits} from "@/entities/Outfit/module/service/fetchOutfits";
+import {type AllOutfitsSchema} from "../types/AllOutfitsSchema";
+import {Outfit} from "../../../../entities/Outfit/types/outfit";
+import {fetchOutfits} from "../service/fetchOutfits/fetchOutfits";
 
 const initialState: AllOutfitsSchema = {}
 
@@ -10,7 +10,7 @@ const allOutfitsSlice = createSlice({
   initialState,
   reducers: {
     template: (state, action: PayloadAction<Outfit[]>) => {
-      state.data = action.payload;
+      state.allOutfits = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -19,7 +19,7 @@ const allOutfitsSlice = createSlice({
       state.isLoading = true
     })
       .addCase(fetchOutfits.fulfilled,  (state, action: PayloadAction<Outfit[]>) => {
-        state.data = action.payload;
+        state.allOutfits = action.payload;
         state.isLoading = false
       })
       .addCase(fetchOutfits.rejected,  (state, action: PayloadAction<any>) => {
