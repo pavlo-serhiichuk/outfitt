@@ -1,1 +1,1 @@
-export {OutfitDetailsPage} from './ui/OutfitDetailsPage'
+export {OutfitDetailsPageAsync as OutfitDetailsPage} from './ui/OutfitDetailsPage.async'

@@ -3,7 +3,7 @@ import {useFetchOutfitDetailsById} from "../api/outfitDetailsApi";
 import {useParams} from "react-router";
 import s from './OutfitDetailsPage.module.scss'
 
-export const OutfitDetailsPage = () => {
+const OutfitDetailsPage = () => {
   const {id: outfitId} = useParams<{ id: string }>()
   const {data: outfitDetails, isLoading, isError} = useFetchOutfitDetailsById(outfitId)
 
@@ -17,3 +17,5 @@ export const OutfitDetailsPage = () => {
     </div>
   );
 };
+
+export default OutfitDetailsPage;
