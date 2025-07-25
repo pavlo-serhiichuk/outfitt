@@ -5,6 +5,17 @@ import {WebpackOptions} from "./types/webpackTypes";
 export const getLoaders = (options: WebpackOptions) => {
   const {paths: {srcPath: include}, isDevMode} = options
 
+  const babelLoader = {
+    test: /\.(js|ts|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: "babel-loader",
+      options: {
+        presets: ['@babel/preset-env']
+      }
+    }
+  }
+
   const scssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
@@ -49,6 +60,7 @@ export const getLoaders = (options: WebpackOptions) => {
     scssLoader,
     imageLoader,
     fontsLoader,
+    babelLoader,
     tsLoader,
   ]
 }
