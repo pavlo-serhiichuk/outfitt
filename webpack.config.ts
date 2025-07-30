@@ -3,7 +3,7 @@ import {getWebpackConfig} from "./config/webpack/getWebpackConfig";
 import {EnvConfiguration, WebpackOptions, WebpackPaths} from "./config/webpack/types/webpackTypes";
 
 
-module.exports = (env: EnvConfiguration) => {
+export default (env: EnvConfiguration) => {
   const mode = env.mode || 'development'
   const port = env.PORT || 3010
   const isDevMode = mode === 'development'

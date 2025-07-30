@@ -1,4 +1,4 @@
-import path from 'path'
+// import path from 'path'
 /**
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
@@ -40,17 +40,7 @@ const config = {
   //   axios: 'axios/dist/node/axios.cjs',
   //   '^@/(.*)$': '<rootDir>src/$1',
   // },
-  // reporters: [
-  //   'default',
-  //   [
-  //     'jest-html-reporters',
-  //     {
-  //       publicPath: '<rootDir>/reports/unit',
-  //       filename: 'report.html',
-  //       // openReport: true,
-  //     },
-  //   ],
-  // ],
+
 }
 
 export default config
