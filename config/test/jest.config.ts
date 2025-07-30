@@ -7,24 +7,11 @@ import path from 'path'
 /** @type {import('jest').Config} */
 
 const config = {
-  // globals: {
-  //   __IS_DEV__: true,
-  //   __API__: true,
-  //   __PROJECT__: 'jest',
-  // },
+
   clearMocks: true,
   testEnvironment: 'jsdom',
-  // setupFilesAfterEnv: ['<rootDir>/config/test/setupTests.ts'],
   coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
   moduleDirectories: ['node_modules'],
-  // moduleNameMapper: {
-  //   '\\.s?css$': path.resolve(__dirname, 'styleMock.ts'),
-  //   '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
-  //   '\\.jpg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
-  //   '\\.png': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
-  //   axios: 'axios/dist/node/axios.cjs',
-  //   '^@/(.*)$': '<rootDir>src/$1',
-  // },
   modulePaths: ['<rootDir>src'],
   moduleFileExtensions: [
     'js',
@@ -39,6 +26,20 @@ const config = {
   rootDir: '../../',
   testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/'],
+  // globals: {
+  //   __IS_DEV__: true,
+  //   __API__: true,
+  //   __PROJECT__: 'jest',
+  // },
+  // setupFilesAfterEnv: ['<rootDir>/config/test/setupTests.ts'],
+  // moduleNameMapper: {
+  //   '\\.s?css$': path.resolve(__dirname, 'styleMock.ts'),
+  //   '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+  //   '\\.jpg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+  //   '\\.png': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+  //   axios: 'axios/dist/node/axios.cjs',
+  //   '^@/(.*)$': '<rootDir>src/$1',
+  // },
   // reporters: [
   //   'default',
   //   [
