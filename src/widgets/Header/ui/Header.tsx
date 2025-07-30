@@ -4,6 +4,7 @@ import {cls} from "@/shared/lib/cls/cls";
 import {getHStack} from "@/shared/ui/Stack";
 import {SearchInput} from "@/features/SearchInput";
 import {NavLink} from "react-router";
+import ThemeSwitcher from "@/widgets/ThemeSwitcher/ui/ThemeSwitcher/ThemeSwitcher";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
         <h4 className={s.logo}>OUTFITT</h4>
       </NavLink>
       <SearchInput/>
-      <div/>
+      <ThemeSwitcher />
     </div>
   );
 };

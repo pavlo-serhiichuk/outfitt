@@ -4,10 +4,12 @@ import {AllOutfitsPage} from "@/pages/AllOutfitsPage";
 import {OutfitDetailsPage} from "@/pages/OutfitDetailsPage";
 import Header from "@/widgets/Header/ui/Header";
 import './style/style.scss'
+import {useTheme} from "@/shared/hooks/useTheme";
 
 
 export function App() {
-  return <div className={'app light'}>
+  const {theme} = useTheme();
+  return <div className={`app ${theme}`}>
     <Header />
     <Routes>
       <Route path="/" element={<AllOutfitsPage />} />

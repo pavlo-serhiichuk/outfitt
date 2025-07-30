@@ -17,7 +17,7 @@ export function getVStack(props: VStackProps) {
     directionClasses.column,
     align && alignClasses[align],
     gap && gapClasses[gap],
-  ]
+  ].join(' ')
 }
 
 export function getVStackString(props: VStackProps) {

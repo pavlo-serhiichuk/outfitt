@@ -1,4 +1,7 @@
 // declaration.d.ts
+declare const __IS_DEV__: boolean;
+declare const __API_URL__: string;
+
 declare module '*.scss' {
   interface IClassNames {
     [className: string]: string
@@ -12,5 +15,7 @@ declare module '*.module.scss' {
   export default classes;
 }
 
-declare const __IS_DEV__: boolean;
-declare const __API_URL__: string;
+declare module '*.svg' {
+  const svg: string
+  export default svg
+}

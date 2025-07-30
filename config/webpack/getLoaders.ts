@@ -5,6 +5,25 @@ import {WebpackOptions} from "./types/webpackTypes";
 export const getLoaders = (options: WebpackOptions) => {
   const {paths: {srcPath: include}, isDevMode} = options
 
+  const svgLoader = {
+    test: /\.svg$/i,
+    issuer: /\.[jt]sx?$/,
+    use: [{
+      loader: '@svgr/webpack',
+      options: {
+        icon: true,
+        svgoConfig: {
+          plugins: [{
+            name: 'convertColors',
+            params: {
+              currentColor: true
+            }
+          }]
+        }
+      }
+    }],
+  }
+
   const babelLoader = {
     test: /\.(js|ts|tsx)$/,
     exclude: /node_modules/,
@@ -36,7 +55,7 @@ export const getLoaders = (options: WebpackOptions) => {
     include,
   }
   const imageLoader = {
-    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    test: /\.(png|jpg|jpeg|gif)$/i,
     type: 'asset/resource',
     include,
   }
@@ -57,6 +76,7 @@ export const getLoaders = (options: WebpackOptions) => {
   }
 
   return [
+    svgLoader,
     scssLoader,
     imageLoader,
     fontsLoader,
