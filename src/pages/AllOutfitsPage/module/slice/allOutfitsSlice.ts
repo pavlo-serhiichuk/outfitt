@@ -9,20 +9,20 @@ const allOutfitsSlice = createSlice({
   name: 'allOutfits',
   initialState,
   reducers: {
-    template: (state, action: PayloadAction<Outfit[]>) => {
-      state.allOutfits = action.payload;
+    setSearchValue: (state, action: PayloadAction<string>) => {
+      state.searchValue = action.payload;
     },
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchOutfits.pending,  (state, action: PayloadAction<Outfit>) => {
-      state.isLoading = true
-    })
-      .addCase(fetchOutfits.fulfilled,  (state, action: PayloadAction<Outfit[]>) => {
-        state.allOutfits = action.payload;
+      .addCase(fetchOutfits.pending, (state, action: PayloadAction<Outfit>) => {
+        // state.isLoading = true
+      })
+      .addCase(fetchOutfits.fulfilled, (state, action: PayloadAction<Outfit[]>) => {
+        state.data = action.payload;
         state.isLoading = false
       })
-      .addCase(fetchOutfits.rejected,  (state, action: PayloadAction<any>) => {
+      .addCase(fetchOutfits.rejected, (state, action: PayloadAction<any>) => {
         state.error = action.payload;
       })
   }

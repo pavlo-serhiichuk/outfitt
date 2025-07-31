@@ -1,7 +1,8 @@
 import {type Outfit} from "../../../../entities/Outfit/types/outfit";
 
 export interface AllOutfitsSchema {
-  allOutfits?: Outfit[];
+  data?: Outfit[];
   isLoading?: boolean
   error?: string | undefined
+  searchValue?: string
 }

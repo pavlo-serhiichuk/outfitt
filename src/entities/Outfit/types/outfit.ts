@@ -1,5 +1,5 @@
 export interface Outfit {
-  id?: 1,
+  id?: number,
   name?: string,
   type?: string,
   category?: string,

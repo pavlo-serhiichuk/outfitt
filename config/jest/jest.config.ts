@@ -25,21 +25,24 @@ const config = {
   ],
   rootDir: '../../',
   testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
+  setupFilesAfterEnv: ['<rootDir>/config/jest/setupTests.ts'],
   testPathIgnorePatterns: ['/node_modules/'],
-  // globals: {
-  //   __IS_DEV__: true,
-  //   __API__: true,
-  //   __PROJECT__: 'jest',
-  // },
-  // setupFilesAfterEnv: ['<rootDir>/config/test/setupTests.ts'],
-  // moduleNameMapper: {
+  transform: {
+    "^.+\\.[jt]sx?$": "babel-jest",
+  },
+  globals: {
+    __IS_DEV__: true,
+    __API_URL__: true,
+    __PROJECT__: 'jest',
+  },
+  moduleNameMapper: {
   //   '\\.s?css$': path.resolve(__dirname, 'styleMock.ts'),
   //   '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
   //   '\\.jpg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
   //   '\\.png': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
   //   axios: 'axios/dist/node/axios.cjs',
-  //   '^@/(.*)$': '<rootDir>src/$1',
-  // },
+    '^@/(.*)$': '<rootDir>src/$1',
+  },
 
 }
 
