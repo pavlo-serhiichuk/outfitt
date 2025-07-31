@@ -1,2 +1,3 @@
 export {Outfit} from '@/entities/Outfit/types/outfit'
-export {mockOutfit} from './mocks/mockOutfit'
+export {mocks} from './mocks/mocks'
+export {mockOutfits} from './mocks/mocks'

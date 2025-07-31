@@ -1,12 +1,12 @@
 import {getOutfitsData, getOutfitsLoading} from './getOutfitsSchemaSelectors'
 import {StateSchema} from "@/app/providers/StoreProvider/StateSchema";
-import {mockOutfit} from "@/entities/Outfit";
+import {mocks} from "@/entities/Outfit";
 
 describe('getOutfitsSchemaSelectors', () => {
   test('getOutfitsData works', () => {
     const state: DeepPartial<StateSchema> = {
       allOutfits: {
-        data: [mockOutfit, {...mockOutfit, id: 2}, {...mockOutfit, id: 3}]
+        data: [mocks, {...mocks, id: 2}, {...mocks, id: 3}]
       }
     }
 

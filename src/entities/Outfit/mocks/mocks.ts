@@ -1,6 +1,6 @@
 import {Outfit} from "@/entities/Outfit";
 
-export const mockOutfit: Outfit = {
+export const mocks: Outfit = {
   "id": 1,
   "name": "Basic White T-Shirt",
   "type": "top",
@@ -28,3 +28,5 @@ export const mockOutfit: Outfit = {
   "description": "A classic white t-shirt made of soft cotton. Comfortable and breathable.",
   "createdAt": "2025-07-01T10:00:00Z"
 }
+
+export const mockOutfits: Outfit[] = [mocks, {...mocks, id: 2}, {...mocks, id: 3}]
