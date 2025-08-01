@@ -1,10 +1,8 @@
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-
-import {WebpackOptions} from "./types/webpackTypes";
-import {getCssLoader} from "./loaders/getCssLoader";
+import {WebpackOptions} from "./types/webpackTypes"
+import {getCssLoader} from "./loaders/getCssLoader"
 
 export const getLoaders = (options: WebpackOptions) => {
-  const {paths: {srcPath: include}, isDevMode} = options
+  const {paths: {srcPath: include}} = options
 
   const svgLoader = {
     test: /\.svg$/i,

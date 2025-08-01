@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react-webpack5'
-import {RouterDecorator} from "@/shared/lib/storybook/decorators/RouterDecorator";
-import {ThemeDecorator} from "@/shared/lib/storybook/decorators/ThemeDecorator";
+import {RouterDecorator} from "@/shared/lib/storybook/decorators/RouterDecorator"
+import {ThemeDecorator} from "@/shared/lib/storybook/decorators/ThemeDecorator"
 import '../../src/app/style/style.scss'
 
 const preview: Preview = {
@@ -13,6 +13,6 @@ const preview: Preview = {
       },
     },
   },
-};
+}
 
-export default preview;
+export default preview

@@ -1,4 +1,4 @@
-import type {StorybookConfig} from '@storybook/react-webpack5';
+import type {StorybookConfig} from '@storybook/react-webpack5'
 import {getWebpackFinal} from './getWebpackFinal'
 
 const config: StorybookConfig = {
@@ -17,5 +17,5 @@ const config: StorybookConfig = {
   },
   staticDirs: ['../../src'],
   webpackFinal: getWebpackFinal
-};
-export default config;
+}
+export default config

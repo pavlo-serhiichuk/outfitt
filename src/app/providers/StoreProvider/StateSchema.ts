@@ -1,6 +1,6 @@
-import {AllOutfitsSchema} from "@/pages/AllOutfitsPage/module/types/AllOutfitsSchema";
-import {rtkApi} from "@/shared/api/rtkApi";
-import {AppDispatch} from "./store";
+import {AllOutfitsSchema} from "@/pages/AllOutfitsPage/module/types/AllOutfitsSchema"
+import {rtkApi} from "@/shared/api/rtkApi"
+import {AppDispatch} from "./store"
 
 export interface StateSchema {
   allOutfits: AllOutfitsSchema

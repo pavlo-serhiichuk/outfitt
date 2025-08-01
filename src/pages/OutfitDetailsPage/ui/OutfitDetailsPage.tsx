@@ -11,6 +11,10 @@ const OutfitDetailsPage = () => {
     return <div>Loading</div>
   }
 
+  if (isError) {
+    return <div>Error</div>
+  }
+
   return (
     <div className={s.OutfitDetailsPage} data-testid="OutfitDetailsPage">
       {JSON.stringify(outfitDetails, null, 2)}

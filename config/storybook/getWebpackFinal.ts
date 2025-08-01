@@ -1,7 +1,7 @@
-import {Configuration as WebpackConfiguration, DefinePlugin} from "webpack";
-import {WebpackOptions, WebpackPaths} from "../webpack/types/webpackTypes";
-import {getCssLoader} from "../webpack/loaders/getCssLoader";
-import path from "path";
+import {Configuration as WebpackConfiguration, DefinePlugin} from "webpack"
+import {WebpackOptions, WebpackPaths} from "../webpack/types/webpackTypes"
+import {getCssLoader} from "../webpack/loaders/getCssLoader"
+import path from "path"
 
 export const getWebpackFinal = async (config: WebpackConfiguration) => {
   const paths: WebpackPaths = {
@@ -37,5 +37,5 @@ export const getWebpackFinal = async (config: WebpackConfiguration) => {
     }),
   )
 
-  return config;
+  return config
 }

@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from '@storybook/react-webpack5'
 
-import { Header } from './Header';
-import {StoreDecorator} from "@/shared/lib/storybook/decorators/StoreDecorator";
-import {StateSchema} from "@/app/providers/StoreProvider/StateSchema";
+import { Header } from './Header'
+import {StoreDecorator} from "@/shared/lib/storybook/decorators/StoreDecorator"
+import {StateSchema} from "@/app/providers/StoreProvider/StateSchema"
 
 const meta = {
   title: 'Example/Header',
@@ -11,15 +11,15 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   }
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Header>
 
-export default meta;
+export default meta
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {},
   decorators: [StoreDecorator({} as StateSchema)]
-};
+}
 
 
 // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout

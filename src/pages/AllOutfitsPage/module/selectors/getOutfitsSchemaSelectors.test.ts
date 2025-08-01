@@ -1,6 +1,6 @@
 import {getOutfitsData, getOutfitsLoading} from './getOutfitsSchemaSelectors'
-import {StateSchema} from "@/app/providers/StoreProvider/StateSchema";
-import {mocks} from "@/entities/Outfit";
+import {StateSchema} from "@/app/providers/StoreProvider/StateSchema"
+import {mocks} from "@/entities/Outfit"
 
 describe('getOutfitsSchemaSelectors', () => {
   test('getOutfitsData works', () => {

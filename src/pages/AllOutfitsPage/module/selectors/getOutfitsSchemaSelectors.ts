@@ -1,4 +1,4 @@
-import {StateSchema} from "@/app/providers/StoreProvider/StateSchema";
+import {StateSchema} from "@/app/providers/StoreProvider/StateSchema"
 
 export const getOutfitsData = (state: StateSchema) => state.allOutfits?.data || []
 export const getOutfitsSearchValue = (state: StateSchema) => state.allOutfits?.searchValue || ''

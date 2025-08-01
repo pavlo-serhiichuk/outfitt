@@ -1,7 +1,7 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import {WebpackOptions} from "./types/webpackTypes";
-import webpack from "webpack";
+import HtmlWebpackPlugin from "html-webpack-plugin"
+import MiniCssExtractPlugin from "mini-css-extract-plugin"
+import {WebpackOptions} from "./types/webpackTypes"
+import webpack from "webpack"
 
 export const getPlugins = (options: WebpackOptions) => {
   const {paths, apiUrl, isDevMode} = options

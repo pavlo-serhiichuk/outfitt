@@ -1,5 +1,5 @@
-import {rtkApi} from "@/shared/api/rtkApi";
-import {Outfit} from "@/entities/Outfit";
+import {rtkApi} from "@/shared/api/rtkApi"
+import {Outfit} from "@/entities/Outfit"
 
 const outfitDetailsApi = rtkApi.injectEndpoints({
   endpoints: build => ({
@@ -11,4 +11,4 @@ const outfitDetailsApi = rtkApi.injectEndpoints({
   })
 })
 
-export const {useFetchOutfitDetailsByIdQuery: useFetchOutfitDetailsById} = outfitDetailsApi;
+export const {useFetchOutfitDetailsByIdQuery: useFetchOutfitDetailsById} = outfitDetailsApi

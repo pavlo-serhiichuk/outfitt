@@ -1,4 +1,4 @@
-import {Outfit} from "@/entities/Outfit";
+import {Outfit} from "@/entities/Outfit"
 
 export const mocks: Outfit = {
   "id": 1,

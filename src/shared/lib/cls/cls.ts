@@ -10,12 +10,12 @@ export function cls(
   mods: Mods = {},
   additional: Array<string | undefined> = [],
 ): string {
-  const modsClasses = Object.entries(mods)
-    .filter(([_, value]) => Boolean(value))
-    .map(([className, _]: [string, string | boolean]) => className)
+  const modesClasses = Object.entries(mods)
+    .filter((mode) => Boolean(mode[1]))
+    .map(([className]: [string, string | boolean]) => className)
     .flat(1)
 
-  return [className, ...modsClasses, ...additional.filter(Boolean)]
+  return [className, ...modesClasses, ...additional.filter(Boolean)]
     .join(' ')
     .trim()
 }

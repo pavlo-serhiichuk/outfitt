@@ -1,4 +1,4 @@
-import {type Outfit} from "../../../../entities/Outfit/types/outfit";
+import {type Outfit} from "../../../../entities/Outfit/types/outfit"
 
 export interface AllOutfitsSchema {
   data?: Outfit[];

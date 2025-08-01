@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"
 
 export const $api = axios.create({
   baseURL: __API_URL__, // Use the correct base URL

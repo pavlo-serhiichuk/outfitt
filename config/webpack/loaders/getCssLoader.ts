@@ -1,5 +1,5 @@
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import {WebpackOptions} from "../types/webpackTypes";
+import MiniCssExtractPlugin from "mini-css-extract-plugin"
+import {WebpackOptions} from "../types/webpackTypes"
 
 export function getCssLoader (options: WebpackOptions) {
   const {isDevMode, paths: {srcPath: include}} = options

@@ -1,7 +1,7 @@
-import path from "path";
-import {getPlugins} from "./getPlugins";
-import {getLoaders} from "./getLoaders";
-import {WebpackOptions} from "./types/webpackTypes";
+import path from "path"
+import {getPlugins} from "./getPlugins"
+import {getLoaders} from "./getLoaders"
+import {WebpackOptions} from "./types/webpackTypes"
 
 export function getWebpackConfig(options: WebpackOptions) {
   const {mode, port, paths} = options

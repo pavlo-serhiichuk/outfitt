@@ -1,6 +1,5 @@
 import {StateSchema} from "./StateSchema";
 import {configureStore, ReducersMapObject} from "@reduxjs/toolkit";
-import {useDispatch} from "react-redux";
 import {allOutfitsReducer} from "@/pages/AllOutfitsPage/module/slice/allOutfitsSlice";
 import {rtkApi} from "@/shared/api/rtkApi";
 
