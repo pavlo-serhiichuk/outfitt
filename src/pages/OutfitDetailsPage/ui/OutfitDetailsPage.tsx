@@ -12,7 +12,7 @@ const OutfitDetailsPage = () => {
   }
 
   return (
-    <div className={s.OutfitDetailsPage}>
+    <div className={s.OutfitDetailsPage} data-testid="OutfitDetailsPage">
       {JSON.stringify(outfitDetails, null, 2)}
     </div>
   );

@@ -1,5 +1,5 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
-import {$api} from "@/shared/api";
+// import {$api} from "@/shared/api";
 import {Outfit} from "@/entities/Outfit";
 import {ThunkConfig} from "@/app/providers/StoreProvider/StateSchema";
 import axios from "axios";

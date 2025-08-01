@@ -6,7 +6,7 @@ import {SearchInput} from "@/features/SearchInput";
 import {NavLink} from "react-router";
 import ThemeSwitcher from "@/widgets/ThemeSwitcher/ui/ThemeSwitcher/ThemeSwitcher";
 
-const Header = () => {
+export const Header = () => {
 
   return (
     <div className={cls(s.Header, {}, getHStack({justify: 'between', align: 'center'}))}>
@@ -18,5 +18,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

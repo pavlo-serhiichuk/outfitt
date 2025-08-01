@@ -1,6 +1,7 @@
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 import {WebpackOptions} from "./types/webpackTypes";
+import {getCssLoader} from "./loaders/getCssLoader";
 
 export const getLoaders = (options: WebpackOptions) => {
   const {paths: {srcPath: include}, isDevMode} = options
@@ -23,7 +24,6 @@ export const getLoaders = (options: WebpackOptions) => {
       }
     }],
   }
-
   const babelLoader = {
     test: /\.(js|ts|tsx)$/,
     exclude: /node_modules/,
@@ -34,26 +34,7 @@ export const getLoaders = (options: WebpackOptions) => {
       }
     }
   }
-
-  const scssLoader = {
-    test: /\.s[ac]ss$/i,
-    use: [
-      isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-      {
-        loader: 'css-loader',
-        options: {
-          esModule: false,
-          modules: {
-            auto: (resPath: string) => resPath.includes('.module.'),
-            localIdentName: isDevMode ? '[local]_[hash:base64:4]' : '[hash:base64:8]',
-            exportLocalsConvention: 'camelCase', // optional
-          }
-        }
-      },
-      'sass-loader'
-    ],
-    include,
-  }
+  const scssLoader = getCssLoader(options)
   const imageLoader = {
     test: /\.(png|jpg|jpeg|gif)$/i,
     type: 'asset/resource',
@@ -67,7 +48,6 @@ export const getLoaders = (options: WebpackOptions) => {
     },
     include,
   }
-
   const tsLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',
