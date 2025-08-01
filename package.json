@@ -12,8 +12,8 @@
     "test:unit": "jest --config config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c config/storybook",
     "build-storybook": "storybook build",
-    "lint:ui": "npx eslint \"./src/**/*.{ts, tsx}\"",
-    "lint:ui:fix": "npx eslint \"./src/**/*.{ts, tsx}\" --fix"
+    "lint:ts": "npx eslint \"./src/**/*.{ts, tsx}\"",
+    "lint:ts:fix": "npx eslint \"./src/**/*.{ts, tsx}\" --fix"
   },
   "author": "",
   "license": "ISC",
