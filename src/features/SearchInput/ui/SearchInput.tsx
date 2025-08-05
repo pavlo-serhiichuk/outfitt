@@ -1,12 +1,13 @@
-import React, {ChangeEvent, useCallback} from 'react';
-import {useAppDispatch} from "@/shared/hooks/useAppDispatch";
-import {useSelector} from "react-redux";
-import {getOutfitsSearchValue} from "@/pages/AllOutfitsPage/module/selectors/getOutfitsSchemaSelectors";
-import {allOutfitsActions} from "@/pages/AllOutfitsPage";
-import {searchByName} from "@/pages/AllOutfitsPage/module/service/searchByName/searchByName";
+import React, {ChangeEvent, useCallback} from 'react'
+import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
+import {useSelector} from "react-redux"
+import {getOutfitsSearchValue} from "@/pages/AllOutfitsPage/module/selectors/getOutfitsSchemaSelectors"
+import {allOutfitsActions} from "@/pages/AllOutfitsPage"
+import {searchByName} from "@/pages/AllOutfitsPage/module/service/searchByName/searchByName"
+import s from './SearchInput.module.scss'
 
 export const SearchInput = () => {
-  const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch()
   const searchValue = useSelector(getOutfitsSearchValue)
   const handleSearch = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     dispatch(allOutfitsActions.setSearchValue(e.target.value))
@@ -15,8 +16,13 @@ export const SearchInput = () => {
 
   return (
     <div>
-      <input type="text" value={searchValue} onChange={handleSearch} />
+      <input
+        type="text"
+        value={searchValue}
+        onChange={handleSearch}
+        className={s.SearchInput}
+      />
     </div>
-  );
-};
+  )
+}
 

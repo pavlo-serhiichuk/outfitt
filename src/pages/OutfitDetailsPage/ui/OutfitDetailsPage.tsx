@@ -1,6 +1,6 @@
-import React from 'react';
-import {useFetchOutfitDetailsById} from "../api/outfitDetailsApi";
-import {useParams} from "react-router";
+import React from 'react'
+import {useFetchOutfitDetailsById} from "../api/outfitDetailsApi"
+import {useParams} from "react-router"
 import s from './OutfitDetailsPage.module.scss'
 
 const OutfitDetailsPage = () => {
@@ -19,7 +19,7 @@ const OutfitDetailsPage = () => {
     <div className={s.OutfitDetailsPage} data-testid="OutfitDetailsPage">
       {JSON.stringify(outfitDetails, null, 2)}
     </div>
-  );
-};
+  )
+}
 
-export default OutfitDetailsPage;
+export default OutfitDetailsPage

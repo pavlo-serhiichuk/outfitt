@@ -8,11 +8,13 @@
   flex-direction: column;
   overflow: hidden;
   transition: 0.2s ease-in-out all;
+
   &:hover {
     transform: scale(1.1);
     z-index: 10;
   }
 }
+
 .outfitNameContainer {
   position: relative;
   width: 100%;
@@ -23,7 +25,7 @@
   position: absolute;
   left: 0;
   color: white;
-  background-color: rgba(54, 54, 54, 0.56);
+  background-color: rgb(54 54 54 / 56%);
   padding: 10px;
   border-radius: 0 15px 15px 0;
 }
@@ -31,12 +33,14 @@
 .outfitName {
   top: 300px;
   font-size: 24px;
+
   &:hover {
     transform: scale(1.1);
     left: 10px;
     transition: 0.2s ease-in-out all;
   }
 }
+
 .outfitDescription {
   top: 360px;
   max-width: 250px;
