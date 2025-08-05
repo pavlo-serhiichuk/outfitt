@@ -16,7 +16,7 @@ describe('getOutfitsSchemaSelectors', () => {
   test('getOutfitsLoading works', () => {
     const state: DeepPartial<StateSchema> = {
       allOutfits: {
-        isLoading: false
+        isLoading: true
       }
     }
 
