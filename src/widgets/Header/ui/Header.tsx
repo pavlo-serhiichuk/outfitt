@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import s from './Header.module.scss'
-import {cls} from "@/shared/lib/cls/cls";
-import {getHStack} from "@/shared/ui/Stack";
-import {SearchInput} from "@/features/SearchInput";
-import {NavLink} from "react-router";
-import ThemeSwitcher from "@/widgets/ThemeSwitcher/ui/ThemeSwitcher/ThemeSwitcher";
+import {cls} from "@/shared/lib/cls/cls"
+import {getHStack, HStack} from "@/shared/ui/Stack"
+import {SearchInput} from "@/features/SearchInput"
+import {NavLink} from "react-router"
+import ThemeSwitcher from "@/widgets/ThemeSwitcher/ui/ThemeSwitcher/ThemeSwitcher"
 
 export const Header = () => {
 
@@ -14,7 +14,10 @@ export const Header = () => {
         <h4 className={s.logo}>OUTFITT</h4>
       </NavLink>
       <SearchInput/>
-      <ThemeSwitcher />
+      <HStack align={'center'} gap={'8'}>
+        <ThemeSwitcher/>
+        {/*<div className={s.account}>Your account</div>*/}
+      </HStack>
     </div>
-  );
-};
+  )
+}

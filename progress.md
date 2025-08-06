@@ -23,13 +23,12 @@
 - createReduxStore, StateSchema, StoreProvider
 - rktApi - part of the app + has working ex.
 
-## PLANS:
-
 ### CI/CD:
 - github actions config
 
 ### Eslint / stylelint / prettier
 
+## PLANS:
 ### Chromatic - visual testing
 
 ### Hooks:
